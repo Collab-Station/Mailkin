@@ -1,0 +1,78 @@
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-image: url(../public/images/landing-splash-haikei.svg);
+  /* Background made from https://app.haikei.app/ */
+}
+
+.small-circle {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  margin-bottom: -2.5vw;
+  z-index: 10;
+  background: #eee;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #eeee;
+  height: 35vw;
+  border-radius: 50%;
+  width: 35vw;
+  z-index: 0;
+}
+
+h1 {
+  display: flex;
+  color: #eeee;
+  font-size: 2.5vw;
+  font-family: "Monaco";
+  align-self: center;
+  justify-content: center;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: fit-content;
+}
+.links-container > li {
+  display: flex;
+  height: fit-content;
+}
+
+ul,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: #505050;
+  font-size: 1.5vw;
+  padding-left: 0;
+  gap: 0.8vw;
+}
+
+button {
+  padding: 0.5vw 1.5vw;
+  border: 1px solid black;
+  background: #eee;
+  border-radius: 8px;
+  opacity: 90%;
+}
